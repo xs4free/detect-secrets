@@ -184,6 +184,7 @@ The current heuristic searches we implement out of the box include:
 
 * **CloudantDetector**: checks for Cloudant credentials.
 
+* **AzureDetector**: checks for Azure secrets.
 
 See [detect_secrets/
 plugins](https://github.com/Yelp/detect-secrets/tree/master/detect_secrets/plugins)
