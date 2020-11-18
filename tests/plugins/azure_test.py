@@ -11,6 +11,7 @@ class TestAzureDetector:
             ('BlobEndpoint=https://blobstoragewebsiteso.blob.core.windows.net/;SharedAccessSignature=sv=2019-12-12&ss=bfqt&srt=c&sp=rwdlacupx&se=2020-11-12T18:35:10Z&st=2020-11-12T10:35:10Z&spr=https&sig=Ab%1CDeFGHIjKlmNoPqRs2tUVwXYZAbcD3eFGhI4jk5lM%6N', 2),
             ('sv=2019-12-12&ss=bfqt&srt=c&sp=rwdlacupx&se=2020-11-12T18:35:10Z&st=2020-11-12T10:35:10Z&spr=https&sig=Ab%1CDeFGHIjKlmNoPqRs2tUVwXYZAbcD3eFGhI4jk5lM%6N', 1),
             ('InstrumentationKey=1234ab56-78cd-9e90-f1ab-12345c6f89af;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/', 1),
+            ('Endpoint=sb://test.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AB1C2DeFGHIJ3KLmNOpQrst4uVWXYZaBCDefghijKlm=', 1),
         ],
     )
     def test_analyze_line(self, payload, should_flag):
