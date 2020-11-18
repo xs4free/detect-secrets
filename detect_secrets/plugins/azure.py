@@ -1,5 +1,5 @@
 """
-This plugin searches for Azure secrets
+This plugin searches for Azure keys
 """
 
 import re
@@ -7,7 +7,8 @@ import re
 from detect_secrets.plugins.base import RegexBasedDetector
 
 class AzureDetector(RegexBasedDetector):
-    secret_type = 'Azure secret'
+    """Scans for Azure keys."""
+    secret_type = 'Azure key'
 
     denylist = [
         re.compile(r'accountkey', re.IGNORECASE), #DefaultEndpointsProtocol=http;AccountName=account1;AccountKey=Abc1deF23gHIjkLmnOpQRStuVwxYZAB4CDeFG56hIJK7LMnoPq8RSTuVw9x0yz/A1BCDEFGhi/JKLMnopqRSTu==;
